@@ -1,7 +1,7 @@
 import test from 'tape'
 import { when, observable } from 'mobx'
-import MockRequester from '../tests/mockRequester'
-import DataManipState from './data_manip'
+import MockRequester from '../mockRequester'
+import DataManipState from '../../src/state/data_manip'
 
 class State extends DataManipState {
   @observable currentView = {}

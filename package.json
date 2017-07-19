@@ -16,10 +16,10 @@
     "material-ui": "^0.16.0",
     "mobx": "^2.3.7",
     "mobx-react": "^3.5.1",
-    "react": "^15.2.1"
+    "react": "^15.2.1",
+    "deep-equal": "^1.0.1"
   },
   "devDependencies": {
-    "axios": "^0.14.0",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.4",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -33,20 +33,11 @@
     "babel-register": "^6.18.0",
     "jsdom": "^9.8.3",
     "json-server": "^0.8.22",
-    "mobx": "^2.3.7",
-    "mobx-react": "^3.5.1",
-    "mobx-react-devtools": "^4.2.6",
-    "mobx-router": "github:vencax77/mobx-router",
-    "react": "^15.2.1",
     "react-addons-test-utils": "^15.3.0",
     "tape": "^4.6.2",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "^3.3.0"
   },
   "scripts": {
     "test": "make test"
-  },
-  "dependencies": {
-    "deep-equal": "^1.0.1"
   }
 }

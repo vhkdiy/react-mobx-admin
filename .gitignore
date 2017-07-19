@@ -7,3 +7,4 @@ build/*.eot
 build/*.woff
 examples/blog/build/*
 lib/
+dist/
