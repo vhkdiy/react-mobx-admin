@@ -23,6 +23,7 @@ module.exports = {
     'axios',
     'mobx',
     'react',
+    'react-dom',
     'lodash',
     'deep-equal'
   ]
