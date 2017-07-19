@@ -21,11 +21,12 @@ module.exports = {
   },
   externals: [
     'axios',
-    'mobx',
-    'react',
-    'react-dom',
+    'deep-equal',
     'lodash',
-    'deep-equal'
+    'mobx',
+    'mobx-react',
+    'react',
+    'react-dom'
   ]
   // plugins: debug ? [] : [
   //   new webpack.optimize.DedupePlugin(),
