@@ -22,3 +22,10 @@ make run
 ```
 
 The application is now available at [http://localhost:8080](http://localhost:8080).
+
+## versions
+
+This is core app, GUI parts are here:
+
+- MUI: https://github.com/vencax/mui-react-mobx-admin
+- Bootstrap: https://github.com/blueskydigital/bstrap-react-mobx-admin
