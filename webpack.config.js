@@ -3,12 +3,12 @@ var debug = process.env.NODE_ENV !== 'production'
 var path = require('path')
 
 module.exports = {
-  devtool: debug ? 'inline-sourcemap' : null,
+  devtool: debug ? 'eval-source-map' : 'hidden-source-map',
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'react-mobx-admin.js',
-    library: 'react-mobx-admin',
+    library: 'ReactMobxAdmin',
     libraryTarget: 'umd'
   },
   module: {
@@ -19,15 +19,30 @@ module.exports = {
       }
     ]
   },
-  externals: [
-    'axios',
-    'deep-equal',
-    'lodash',
-    'mobx',
-    'mobx-react',
-    'react',
-    'react-dom'
-  ]
+  externals: {
+    'axios': 'axios',
+    'deep-equal': 'deep-equal',
+    'lodash': {
+      commonjs: 'lodash',
+      commonjs2: 'lodash',
+      amd: 'lodash',
+      root: '_'
+    },
+    'mobx': 'mobx',
+    'mobx-react': 'mobx-react',
+    'react': {
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'react',
+      root: 'React'
+    },
+    'react-dom': {
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'react-dom',
+      root: 'ReactDOM'
+    }
+  }
   // plugins: debug ? [] : [
   //   new webpack.optimize.DedupePlugin(),
   //   new webpack.optimize.OccurenceOrderPlugin(),
