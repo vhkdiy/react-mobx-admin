@@ -2,7 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 
 // dropdown with available filters
-class DropdownBase extends React.Component {
+class FilterDropdownBase extends React.Component {
 
   static propTypes = {
     filters: React.PropTypes.object.isRequired,
@@ -29,7 +29,7 @@ class DropdownBase extends React.Component {
 }
 
 // controls to set filter values
-class ControlsBase extends React.Component {
+class FilterControlBase extends React.Component {
 
   static propTypes = {
     filters: React.PropTypes.object.isRequired,
@@ -67,4 +67,4 @@ class ControlsBase extends React.Component {
   }
 }
 
-export default { DropdownBase, ControlsBase }
+export { FilterDropdownBase, FilterControlBase }
