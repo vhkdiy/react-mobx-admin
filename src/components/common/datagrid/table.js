@@ -1,5 +1,5 @@
 
-export function buildHeaders(attrs, titles, renderHeader, listActionsRender, onSort, sortstate) {
+export function buildTableHeaders(attrs, titles, renderHeader, listActionsRender, onSort, sortstate) {
   let headers = []
   let i
   for(i = 0; i < attrs.length; i++) {
@@ -16,7 +16,7 @@ export function buildHeaders(attrs, titles, renderHeader, listActionsRender, onS
   return headers
 }
 
-export function buildCells(attrs, fields, row, rowId, renderCell, renderRowActions) {
+export function buildTableCells(attrs, fields, row, rowId, renderCell, renderRowActions) {
   let cells = []
   let i
   for(i = 0; i < attrs.length; i++) {

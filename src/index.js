@@ -7,6 +7,7 @@ import MultivalueField from './components/common/field/multivalue'
 import ObservedOptionsField from './components/common/field/opts_observed'
 import OptionsField from './components/common/field/opts'
 
+import { buildTableHeaders, buildTableCells } from './components/common/datagrid/table'
 import { FilterDropdownBase, FilterControlBase } from './components/common/datagrid/filters'
 import PaginationBase from './components/common/datagrid/pagination'
 import DatagridActions from './components/common/datagrid/actions'
@@ -16,12 +17,16 @@ export {
   DataRequester,
   DataManipState,
   DataTableState,
+  // fields
   MultivalueField,
   ObservedOptionsField,
   OptionsField,
+  // datagrid
   PaginationBase,
   DatagridActions,
   ColumnHeader,
   FilterDropdownBase,
-  FilterControlBase
+  FilterControlBase,
+  buildTableHeaders,
+  buildTableCells
 }
